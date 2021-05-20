@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MSOA Names</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="An interactive map showing Middle-Layer Super Output Areas (MSOAs) in England and Wales and their names in the House of Commons Library MSOA Names dataset." />
+    <link href="../mapbox-gl.css" rel="stylesheet" />
+    <script src="../msoa.bundle.js"></script>
+    <link href="../map.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="map"></div>
+    <div id="infobox">
+        <h1>MSOA Names</h1>
+        <noscript>
+        <p class="noscript-opening">This page requires JavaScript to work correctly. It shows an interactive map of Middle-Layer Super Output Areas (MSOAs) and the names given to them in the House of Commons Library's MSOA Names dataset.</p>
+        <p class="noscript">The purpose of the MSOA Names project is to provide a set of meaningful names for these areas so that statistics published at this level can be presented more effectively.</p>
+        <p class="noscript">The purpose of this map is to show the geographical boundaries for these areas alongside their names.</p>
+        <p class="noscript">The full dataset of MSOA Names can be downloaded in <a href="../MSOA-Names-1.13.xlsx">Excel</a> or <a href="../MSOA-Names-1.13.csv">CSV</a> format.</p>
+        </noscript>
+        <p>Find out more at the <a href="../" tabindex="1">homepage</a>.</p>
+    </div>
+    <script>
+    const long = msoa.getQueryString("long");
+    const lat = msoa.getQueryString("lat");
+    const zoom = msoa.getQueryString("zoom");
+    msoa.startMap(long, lat, zoom);
+    </script>
+</body>
+</html>

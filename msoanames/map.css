@@ -1,0 +1,166 @@
+/* Imports ----------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+/* Map styles -------------------------------------------------------------- */
+
+body {
+    margin:0;
+    padding:0;
+}
+
+#map {
+    position:absolute;
+    top:0;
+    bottom:0;
+    width:100%;
+}
+
+a:link, a:visited {
+    color: #006548;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a:hover, a:active {
+    color: #3f9d8a;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#infobox {
+    position: absolute;
+    margin: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11pt;
+    background: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+    color: #404040;
+    max-width: 400px;
+}
+
+#infobox p {
+    margin: 0;
+    padding: 0;
+}
+
+#infobox p.noscript-opening {
+    margin: 0;
+    padding: 12px 0 12px 0;
+}
+
+#infobox p.noscript {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 12px;
+}
+
+#infobox h1 {
+    margin: 0px;
+    padding: 0px;
+    color: #006548;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+/* Selection styles -------------------------------------------------------- */
+
+.mapboxgl-popup-content {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+    width: 270px;
+}
+
+#selection {
+    margin: 0 0 5px 0;
+    padding: 4px;
+    width: 96%;
+    border: 1px solid #c0c0c0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11pt;
+}
+
+#selection:focus {
+    outline: none !important;
+    box-shadow: none;
+    border-color: #006548;
+    background: #e6fff8;
+}
+
+.messagebox {
+    margin: 0;
+    padding: 10px;
+    /* width: 250px; */
+}
+
+#namebox {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 0 9px 0;
+    padding: 0;
+}
+
+#namebox p {
+    margin: 0;
+    padding: 0
+    font-family: inherit;
+    font-size: 14pt;
+    font-weight: bold;
+    line-height: 1.3em;
+    color: #006548;
+}
+
+#contentbox {
+    margin: 0 0 12px 0;
+    padding: 0;
+}
+
+#contentbox p {
+    margin: 0 0 3px 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11pt;
+    color: #404040;
+}
+
+#buttonbox {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#buttonbox button {
+    outline: none;
+    margin: 0;
+    height: 30px;
+    width: 100%;
+    font-family: inherit;
+    font-size: 11pt;
+    font-weight: bold;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #606060;
+    border: 1px solid #a0a0a0;
+}
+
+#buttonbox button:hover {
+    color: #006548;
+    background: #ffffff;
+    border-color: #006548;
+}
+
+#buttonbox button:active {
+    color: #3f9d8a;
+    background: #ffffff;
+    border-color: #3f9d8a;
+}

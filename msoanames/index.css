@@ -1,0 +1,218 @@
+/* Imports ----------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+/* Page structure ---------------------------------------------------------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+    background: #ffffff;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 15px 5px 15px 5px;
+    border: none;
+    background: #006548;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row;
+}
+
+#main > #column {
+    margin: 5px;
+    padding: 10px;
+    max-width: 640px;
+    border: none;
+    background: #ffffff;
+    flex: 3 1 auto;
+    order: 2;
+}
+
+#main > nav {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: #ffffff;
+    flex: 1 6 10%;
+    order: 1;
+}
+
+#main > aside {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: #ffffff;
+    flex: 1 6 10%;
+    order: 3;
+}
+
+footer {
+    display: block;
+    margin: 0px;
+    margin-bottom: 14px;
+    padding: 5px;
+    border: none;
+    text-align: center;
+    color: #00000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+/* Text elements */
+article {
+    margin: 0;
+    padding: 0;
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 27px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    color: #006548;
+}
+
+h2 {
+    margin: 0;
+    padding: 12px 0 18px 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #006548;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 24px;
+    line-height: 1.45;
+    color: #000000;
+}
+
+p.gotomap {
+    text-align: center;
+}
+
+p.closing {
+    text-align: center;
+    font-weight: bold;
+}
+
+img {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+#portcullis {
+    height: 100px;
+    width: 87px;
+}
+
+.accept {
+    padding: 0;
+    text-align: center;
+}
+
+button {
+    margin: 30px 20px 50px 20px;
+    padding: 20px 20px 20px 20px;
+    font-family: inherit;
+    font-size: 18pt;
+    font-weight: bold;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #ffffff;
+    background: #006548;
+    border: 1px solid #006548;
+}
+
+button:active {
+    background: #ffffff;
+    color: #006548;
+    border-color: #006548;
+}
+
+#downloadbox {
+    margin: 20px;
+    padding: 20px;
+    background: #f0f0f0;
+    border: 1px solid #c0c0c0;
+}
+
+#downloadbox p {
+    margin: 0;
+    padding: 0;
+}
+
+#downloadbox ul {
+    margin: 0;
+    padding: 20px 40px 20px 40px;
+}
+
+/* Links */
+a:link, a:visited {
+    color: #006548;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a:hover, a:active {
+    color: #3f9d8a;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+footer a:link, footer a:visited {
+    color: #006548;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+footer a:hover, footer a:active {
+    color: #3f9d8a;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+/* Media queries ------------------------------------------------------------ */
+
+@media all and (max-width: 640px) {
+    #main {
+        flex-direction: column;
+    }
+
+    #main > #column, #main > nav, #main > aside {
+    /* Return them to document order */
+        order: 0;
+    }
+
+    #main > nav, #main > aside {
+        min-height: 0px;
+        max-height: 0px;
+    }
+}
