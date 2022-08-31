@@ -36,6 +36,13 @@
     const lat = msoa.getQueryString("lat");
     const zoom = msoa.getQueryString("zoom");
     
+    // Add the control to the map.
+    msoa.map.addControl(
+        new MapboxGeocoder({
+            accessToken: "pk.eyJ1IjoiaGF3a2luc29ob2NsIiwiYSI6ImNraDBtYW9jaTB6YXkycm52Y2t6MTB2anEifQ.G4BRLK2Zb9BwnHsVRdAeGQ",
+            mapboxgl: mapboxgl
+        })
+        
     msoa.startMap(config, long, lat, zoom);
     
     </script>
