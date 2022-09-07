@@ -31,7 +31,11 @@
         "mapboxSourceUrl": "mapbox://hawkinsohocl.4cawp56k",
         "mapboxAccessToken": "pk.eyJ1IjoiaGF3a2luc29ob2NsIiwiYSI6ImNraDBtYW9jaTB6YXkycm52Y2t6MTB2anEifQ.G4BRLK2Zb9BwnHsVRdAeGQ"
     };
-     
+     // remove from here   
+    const search = new MapboxSearchBox();
+    search.accessToken = 'pk.eyJ1IjoiaGF3a2luc29ob2NsIiwiYSI6ImNraDBtYW9jaTB6YXkycm52Y2t6MTB2anEifQ.G4BRLK2Zb9BwnHsVRdAeGQ';
+    msoa.addControl(search);
+    //
     const long = msoa.getQueryString("long");
     const lat = msoa.getQueryString("lat");
     const zoom = msoa.getQueryString("zoom");
