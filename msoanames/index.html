@@ -18,13 +18,26 @@
 
             <div id="downloadbox">
             <p>Download the MSOA names dataset in Excel or CSV format.</p>
-            <ul>
-                <li><a href="MSOA-Names-1.17.xlsx">MSOA Names (Excel)</a></li>
-                <li><a href="MSOA-Names-1.17.csv">MSOA Names (CSV)</a></li>
-                <li><a href="MSOA-Names-Latest.csv">MSOA Names (static URL CSV)</a></li>
+            <br>
+			<b>2021 MSOAs</b>
+			
+			<ul>
+                <li><a href="MSOA-Names-2.0.xlsx">MSOA Names 2021 (Excel)</a></li>
+                <li><a href="MSOA-Names-2.0.csv">MSOA Names 2021 (CSV)</a></li>
+                <li><a href="MSOA-Names-Latest2.csv">MSOA Names 2021 (static URL CSV)</a></li>
+            </ul>
+			
+			This is the first release of MSOA Names for the 2021 MSOAs (version <b>2.0</b>).<br><br> </p>
+			
+			<p><b>2011 MSOAs</b>
+			
+			<ul>
+                <li><a href="MSOA-Names-1.18.xlsx">MSOA Names 2011 (Excel)</a></li>
+                <li><a href="MSOA-Names-1.18.csv">MSOA Names 2011 (CSV)</a></li>
+                <li><a href="MSOA-Names-Latest.csv">MSOA Names 2011 (static URL CSV)</a></li>
             </ul>
 
-            <p>The current version is <strong>1.17</strong> published on 28 March 2022. Differences with older versions can be found in the <a href="MSOA-Names-Changelog-1.17.xlsx">Changelog</a>.</p>
+            <p>This is version <strong>1.18</strong> of the 2011 MSOA Names, published on 22 September 2022. Differences with older versions can be found in the <a href="MSOA-Names-Changelog-1.18.xlsx">Changelog</a>.</p>
             </div>
 
             <div class="accept">
@@ -33,14 +46,15 @@
                     <input id="lat" name="lat" type="hidden" value="51.510357" />
                     <input id="zoom" name="zoom" type="hidden" value="12.5" />
                     <button id="acceptbutton" class="acceptbutton" type="submit">
-                        See a map of MSOAs
+                        See a map of 2011 MSOAs
                     </button>
                 </form>
+				
             </div>
 
             <h2>What are MSOAs?</h2>
 
-            <p>Middle-Layer Super Output Areas (MSOAs) are a <a href="https://www.ons.gov.uk/methodology/geography/ukgeographies/censusgeography">statistical geography</a> created for the <a href="https://www.ons.gov.uk/census/2011census">2011 Census of England and Wales</a>. There are 7,201 MSOAs in England and Wales, with a typical population of 7,000-10,000 people. Each MSOA sits within a local authority, and each local authority is divided into between one and 132 MSOAs depending on how many people live there.</p>
+            <p>Middle-Layer Super Output Areas (MSOAs) are a <a href="https://www.ons.gov.uk/methodology/geography/ukgeographies/censusgeography">statistical geography</a> created for the <a href="https://www.ons.gov.uk/census/2011census">Census of England and Wales</a>. In 2021 there are 7,264 MSOAs in England and Wales, with a typical population of 7,000-10,000 people. Each MSOA sits within a local authority, and each local authority is divided into between one and 132 MSOAs depending on how many people live there.</p>
 
             <h2>Why do they need names?</h2>
 
@@ -52,7 +66,16 @@
 
             <p>In January 2019 we published draft names on an interactive map website to invite feedback and suggestions on our first draft set of names. This remained open until July 2019 and provided invaluable local knowledge to help us improve the set of names. Many thanks to those of you who contributed. In October 2019 we published the revised set of names on this site. We'd also like to thank the the <a href="http://www.comisiynyddygymraeg.cymru/english/Pages/Home.aspx">Welsh Language Commissioner</a> for their assistance with developing Welsh-language names for MSOAs in Wales.</p>
 
-            <h2>What about council wards and their names?</h2>
+			<h2>2021 changes</h2>
+			<p>In summer 2022 ONS published <a href="https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=name&tags=all(BDY_MSOA%2CDEC_2021)">details of 2021 census geographies</a>, including MSOAs. In September 2022 we published names for the 2021 MSOAs.</p>
+			
+			<p>The 2021 set of MSOAs has 184 new areas out of 7,264. These are all splits or merges of 2011 MSOAs (i.e. one 2011 MSOA split into two or more new MSOAs, or two or more 2011 MSOAs merged into a new MSOA). The remainder are unchanged. This means that only 184 names are entirely new to the 2021 MSOA Names series (2.x releases). These are flagged in the new data files as "New in 2021" in the "type" column.</p>
+
+			<p>While producing the 2021 Names we have also made a small number of changes and corrections to the original data set (17 in total). These are included in both the 1.18 (2011 Names) and 2.0 (2021 Names) releases, and are detailed in the 1.x changelog above as changes made in version 1.18. Future changes will be made to both the 1.x and 2.x datasets (as applicable), and the 2011 (1.x) dataaset will still be supported.
+			
+			<p>Please contact us on <a href="mailto:papers@parliament.uk?subject=MSOA-Names">papers@parliament.uk</a> if you have comments, suggestions or corrections relating to the new names (please include &lsquo;MSOA Names&rsquo; in the email subject line).
+			
+			<h2>What about council wards and their names?</h2>
 
             <p>Wards <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/wardlevelmidyearpopulationestimatesexperimental">vary substantially in population</a> in different parts of the country. In some areas, wards have similar or identical boundaries to MSOAs and in these cases their names are often adopted as MSOA names too. However, sometimes ward and MSOA boundaries differ substantially, so different names are needed. Also, ward names are not always related to the names of the settlements they cover and aren't always designed to be recognisable outside the area. In such cases our MSOA names may differ from ward names.</p>
 
@@ -70,7 +93,7 @@
 
             <h2>How can I map MSOAs?</h2>
 
-            <p>Boundaries for MSOAs are published on the <a href="https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=name&tags=BDY_MSOA%2CDEC_2011">ONS Geography Portal</a>.</p>
+            <p>Boundaries for MSOAs are published on the <a href="https://geoportal.statistics.gov.uk/">ONS Geography Portal</a>.</p>
 
             <h2>Can you provide MSOA Names data in another format?</h2>
 
